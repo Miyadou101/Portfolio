@@ -2,112 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Iyad's Portfolio</title>
-  <link rel="stylesheet" href="style/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Game+Quotes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">Iyad</a>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Iyad</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <div class="nav__close" id="nav-close">&times;</div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section (About) -->
+<section id="about" class="pt-5 mt-5">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Profile Image on the Left -->
+      <div class="col-md-6 text-center order-1 order-md-1" data-aos="fade-right">
+        <img src="Images/profil.jpg" alt="Profile" class="rounded-circle profile-img mb-3 img-fluid" style="max-width: 300px;">
+      </div>
+      <!-- Text Content on the Right -->
+      <div class="col-md-6 order-2 order-md-2" data-aos="fade-left">
+        <h1 class="fw-bold">Hi, I'm Iyad</h1>
+        <p class="lead">A passionate software developer which specialized in web and game design ,  
+          filled with love and enthusiasm for this work and always happy to help </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="container text-center py-5">
+  <h2 class="mb-4">Skills</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-filetype-html skill-icon"></i>
+        <div>HTML</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-filetype-css skill-icon"></i>
+        <div>CSS</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-filetype-js skill-icon"></i>
+        <div>JavaScript</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-palette skill-icon"></i>
+        <div>UI/UX Design</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-controller skill-icon"></i>
+        <div>Game Dev</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-terminal-fill skill-icon"></i>
+        <div>Python</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-c-square skill-icon"></i>
+        <div>C</div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="skill-item">
+        <i class="bi bi-database-fill gear-icon"></i>
+        <div>SQL Databases</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <div class="row align-items-start flex-md-row-reverse">
+      <!-- Screenshots on the Right -->
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img src="Images/galaxywarriors.png" class="img-fluid rounded mb-3" alt="Galaxy Warriors Screenshot 1">
+        <img src="Images/galaxywarriors2.png" class="img-fluid rounded mb-3" alt="Galaxy Warriors Screenshot 2">
+        <div class="mt-3">
+          <a href="https://github.com/Miyadou101/Galaxy-Warriorrs" class="btn btn-primary btn-lg me-2">Play</a>
+          <a href="https://github.com/Miyadou101/Galaxy-Warriorrs" class="btn btn-outline-secondary btn-lg">View Code</a>
+        </div>
       </div>
 
-      <div class="nav__toggle" id="nav-toggle">&#9776;</div>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <main class="main">
-    <!-- Home Section -->
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__data">
-          <h1 class="home__title">Hi, I'm Iyad</h1>
-          <h3 class="home__subtitle">Aspiring Software Developer</h3>
-          <p class="home__description">Web & Game Design Enthusiast</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about section" id="about">
-      <h2 class="section__title">About Me</h2>
-      <p>
-        Hello I'm Iyad an aspiring software devolepper specialized in web and game design currently studying at
-        <em>University of science and technology Houari Boumedien</em>, i'm hoping to improve my skills to be of varying use in diffrent projects and areas in the field of IT.
-      </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <div class="skills__content">
-        <div class="skills__bar html">
-          <span>HTML</span>
-          <div class="skills__percentage"></div>
-        </div>
-        <div class="skills__bar css">
-          <span>CSS</span>
-          <div class="skills__percentage"></div>
-        </div>
-        <div class="skills__bar js">
-          <span>JavaScript</span>
-          <div class="skills__percentage"></div>
-        </div>
-        <div class="skills__bar uiux">
-          <span>UI/UX Design</span>
-          <div class="skills__percentage"></div>
-        </div>
-      </div>
-      <p>
-        Although I'm new to this area, I would love to learn and improve and have the enthusiasm and passion that I know is necessary for this type of work.
-      </p>
-    </section>
-
-    <!-- Work Section -->
-    <section class="work section" id="work">
-      <h2 class="section__title">Work</h2>
-      <div class="work__project">
-        <h3>Galaxy Warriorrs</h3>
+      <!-- Description on the Left -->
+      <div class="col-md-6" data-aos="fade-right">
+        <h2 class="fw-bold">Galaxy Warriors</h2>
         <p>
-          Galaxy Warriorrs is a dynamic web-based shooter game where players navigate through waves of enemies using skill and strategy. Features include progressive difficulty, multiple enemy types, and immersive sound effects.
+          An Homage to 16-bit Arcade style Space shooters with plenty of features
         </p>
-        <div class="project__buttons">
-          <a href="https://miyadou101.github.io/Galaxy-Warriorrs" target="_blank" rel="noopener noreferrer" class="button">Play</a>
-          <a href="https://github.com/Miyadou101/Galaxy-Warriorrs" target="_blank" rel="noopener noreferrer" class="button button--secondary">View Code</a>
-        </div>
-      </div>
-    </section>
+        <h5>Made as a Collaboration project for BUR\WEB by the Extremely Talented : </h5>
+        <ul>
+          <li><i>Kasmi Mohamed Iyad</i> :  Main Project Developer and Designer </li>
+          <li><i>Zaidi Amine Abderahman</i> :  Assets-Provider </li>
+          <li><i>Djema Mohamed Aymen</i> :  Play-Testing</li>
+        </ul>
 
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <p>Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect on my socials below.</p>
-    </section>
-  </main>
+        <h3>Feature List</h3>
+        <ul>
+          <li><strong>Intuitive Controls:</strong> Smooth movement with the Arrow keys and Shoot with SPACE</li>
+          <li><strong>Functional and Aesthetic Interface:</strong> Tutorial and Settings sections</li>
+          <li><strong>Score System:</strong> Each enemy killed gives you 10 points</li>
+          <li><strong>Level System:</strong> Levels increase based on your score</li>
+          <li><strong>Enemy Variety:</strong> 6 types of enemies:
+            <ul>
+              <li>Greens: Move straight down</li>
+              <li>Blues: Move in a zigzag</li>
+              <li>Reds: Stay still and shoot at you</li>
+              <li><em>Type 1</em>: one hit to kill</li>
+              <li><em>Type 2</em>: two hits to kill</li>
+            </ul>
+          </li>
+          <li><strong>Level Progression:</strong>
+            <ul>
+              <li>Level 1: only greens</li>
+              <li>Level 2: only blues</li>
+              <li>Level 3: only reds</li>
+              <li>Level 4: only type 1</li>
+              <li>Level 5+: all types mixed</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>To Be Done</h3>
+        <ul>
+          <li>Sound Effects: Shooting, Destruction, Respawn, Startup, Game Over</li>
+          <li>HUD and Game Over Pop-Up</li>
+          <li>Power-Ups: Laser, Plasma, Shield, Shadow, Health pickup</li>
+          <li>Full Animations for player/enemy ships, bullets, effects</li>
+          <li>Obstacles: Asteroids, enemy structures</li>
+          <li>Boss Fights every 5 levels with extra life reward</li>
+          <li>And much more to come in <i>Galaxy Warriors</i>!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Contact</h2>
+      <p>Feel free to reach out via <a href="mailto:kmiyadou@gmail.com.com">email</a> or connect on my socials below.</p>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <p>
-      &copy; 2025 Iyad's Portfolio —
-      <a href="https://github.com/Miyadou101" target="_blank" rel="noopener noreferrer">GitHub</a> |
-      <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="https://github.com/Miyadou101" class="me-3" target="_blank">
+          <img src="Images/github.svg" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">
+          <img src="Images/linkedin.svg" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+      <p>&copy; 2025 Kasmi Mohamed Iyad. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="logic/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="logic.js"></script>
 </body>
 </html>
