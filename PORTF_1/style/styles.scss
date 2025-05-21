@@ -1,0 +1,20 @@
+// Variables
+$primary-color: #007BFF;
+$font-family: 'Montserrat', sans-serif;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Base styles
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+}
+
+// Additional or customized styles can go here...
