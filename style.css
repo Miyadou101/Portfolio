@@ -1,0 +1,76 @@
+/* Reset and base styles */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Skills Section */
+#skills .bi {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#skills p {
+  font-size: 1.2rem;
+}
+
+/* Work Section */
+#work img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+}
+
+footer a {
+  color: #3399ff;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #66b3ff;
+}
