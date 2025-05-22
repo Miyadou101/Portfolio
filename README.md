@@ -1,4 +1,4 @@
 # Portfolio
-Here is my Portfolio to showcase my work and introduce myself to the World Wide Web
+Here is my Portfolio website to showcase my work and introduce myself to the World Wide Web .
 
-### PS:Dont Forget to check my new game *Galaxy Warriors*
+### PS : Dont Forget to check out my New Game *Galaxy Warriors* .
