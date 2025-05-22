@@ -20,10 +20,16 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .skill-icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
+  font-size: 2rem; 
+  margin-bottom: 0.5rem;
 }
 
 
