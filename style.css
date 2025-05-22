@@ -35,6 +35,13 @@ body {
 .btn {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.project-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
 .btn:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -60,5 +67,8 @@ body {
   margin-bottom: 8px;
   color: #0d6efd;
 }
+
+strong {
+  font-size: 1.1em; }
 
 
