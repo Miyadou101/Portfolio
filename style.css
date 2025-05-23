@@ -1,0 +1,87 @@
+body {
+  scroll-behavior: smooth;
+  font-size: 24px;
+  font-family: 'PT Serif', serif;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #0d6efd;
+}
+
+#about{
+    font-size: 28px;
+}
+
+#skill{
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon {
+  font-size: 2rem; 
+  margin-bottom: 0.5rem;
+}
+
+
+#projects {
+  font-family: 'Game Quotes', sans-serif;
+  font-size: 20px;
+}
+
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.big-btn {
+  padding: 1.5rem 3rem;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
+}
+
+
+.project-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.skill-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 8px;
+  color: #0d6efd;
+}
+
+strong {
+  font-size: 1.1em; }
+
+
